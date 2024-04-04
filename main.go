@@ -4,7 +4,8 @@ import (
 	"fmt"
 	//"runtime"
 	//"github.com/emic310/godesde0/variables"
-	"github.com/emic310/godesde0/ejercicios"
+	//"github.com/emic310/godesde0/ejercicios"
+	"github.com/emic310/godesde0/teclado"
 )
 
 func main() {
@@ -39,6 +40,7 @@ func main() {
 	}
 	*/
 
+	/*
 	entero, texto := ejercicios.ConvertStringToInt("99")
 	fmt.Println(entero, " ", texto)
 
@@ -47,4 +49,7 @@ func main() {
 
 	entero, texto = ejercicios.ConvertStringToInt("texto")
 	fmt.Println(entero, " ", texto)
+	*/
+
+	teclado.IngresoNumeros()
 }
