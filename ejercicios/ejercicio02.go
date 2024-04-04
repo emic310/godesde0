@@ -32,7 +32,7 @@ func TablaUnoAlDiez() {
 	fmt.Println("Tabla del ", numero1)
 
 	for i := 1; i <= 10; i++ {
-		salida = numero1 + " * " + i + " = " 
+		salida = strconv.Itoa(numero1) + " * " + strconv.Itoa(i) + " = "
 		fmt.Println(salida, numero1 * i)
 	}
 
