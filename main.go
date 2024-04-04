@@ -6,9 +6,9 @@ import (
 	//"fmt"
 	//"runtime"
 	//"github.com/emic310/godesde0/variables"
-	//"github.com/emic310/godesde0/ejercicios"
+	"github.com/emic310/godesde0/ejercicios"
 	//"github.com/emic310/godesde0/teclado"
-	"github.com/emic310/godesde0/iteraciones"
+	//"github.com/emic310/godesde0/iteraciones"
 )
 
 // luego todo lo demas, variables, metodos, funciones
@@ -57,5 +57,7 @@ func main() {
 
 	//teclado.IngresoNumeros()
 
-	iteraciones.Iterar()
+	//iteraciones.Iterar()
+	
+	ejercicios.TablaUnoAlDiez()
 }
