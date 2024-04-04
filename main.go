@@ -20,10 +20,20 @@ func main() {
 
 	// el if no lleva parentesis, se puede asignar antes de evaluar separando con ;
 	// la llave { va en la misma linea (no abajo) y el ELSE va en la misma linea donde cierra el IF (no abajo)
-	if os:= runtime.GOOS; os == "Linux." || os == "OS X." {
-		fmt.Println("Esto no es Windows, es " os)
+	if os := runtime.GOOS; os == "Linux." || os == "OS X." {
+		fmt.Println("Esto no es Windows, es ", os)
 	} else {
 		fmt.Println("Esto es Windows")
+	}
+
+	//tambien se puede asignar antes de evaluar separando con ;
+	switch os := runtime.GOOS; os {
+		case "linux":
+			fmt.Println("Esto es Linux")
+		case "darwin":
+			fmt.Println("Esto es Darwin")
+		default:
+			fmt.Println("%s \n", os)
 	}
 
 }
