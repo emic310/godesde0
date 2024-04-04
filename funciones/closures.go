@@ -26,8 +26,8 @@ func LlamarClosure() {
 	// esta variable recibe el closure
 	MiTabla := tabla(tablaDel)
 
-	for i := 1; i <= 10: i++ {
-		fmt.Println(MiTabla)
+	for i := 1; i <= 10; i++ {
+		fmt.Println(MiTabla())
 		// cada vez que llamo MiTabla (que tiene el closure) estoy llamando a una función 
 		// se va a ejecutar lo de adentro del return de tabla (la inicialización de variables se hace solo la primera vez) 
 	}
