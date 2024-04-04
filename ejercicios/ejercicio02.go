@@ -38,12 +38,13 @@ func TablaCeroAlDiez() {
 
 }
 
-// la solución del profesor
-func TablaDeMultiplicar() {
+// uso la solución del profesor para la escritura de archivo
+func TablaDeMultiplicar() string {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	var numero int
 	var err error
+	var texto string
 
 	for {
 		fmt.Println("Ingrese un número : ")
@@ -58,8 +59,16 @@ func TablaDeMultiplicar() {
 	}
 
 	for i := 1; i <= 10; i++ {
+		// Printf retorna un numero entero y un error, entonces no nos sirve para guardar en la variable 
+		// o sirve pero tenemos que descartar el error
+
+		// Fprintln que guarda en un archivo el resultado, podriamos usarlo  pero como vamos a manejarlo en un paquete no lo usamos
+		
+		// Sprintf que retorna solo el string resultado
+		texto += fmt.Sprintf("%d x %d = %d \n", numero, i, numero*i)
 		// %d número decimal de tipo base 10
-		fmt.Printf("%d x %d = %d \n", numero, i, numero*i)
 	}
+
+	return texto
 
 }

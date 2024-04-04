@@ -3,12 +3,13 @@ package main
 
 // luego van los imports
 import (
-	//"fmt"
+	"fmt"
 	//"runtime"
 	//"github.com/emic310/godesde0/variables"
-	"github.com/emic310/godesde0/ejercicios"
+	//"github.com/emic310/godesde0/ejercicios"
 	//"github.com/emic310/godesde0/teclado"
 	//"github.com/emic310/godesde0/iteraciones"
+	"github.com/emic310/godesde0/files"
 )
 
 // luego todo lo demas, variables, metodos, funciones
@@ -59,6 +60,10 @@ func main() {
 
 	//iteraciones.Iterar()
 	
-	ejercicios.TablaCeroAlDiez()
-	ejercicios.TablaDeMultiplicar()
+	//ejercicios.TablaCeroAlDiez()
+
+	//fmt.Println(ejercicios.TablaDeMultiplicar())
+	//files.GrabaTabla()
+	files.SumaTabla()
+
 }
