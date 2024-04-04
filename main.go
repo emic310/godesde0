@@ -69,6 +69,7 @@ func main() {
 	//files.SumaTabla()
 	//files.LeoArchivo()
 
-	funciones.Calculos()
+	//funciones.Calculos()
+	funciones.LlamarClosure()
 
 }
