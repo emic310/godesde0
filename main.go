@@ -10,7 +10,8 @@ import (
 	//"github.com/emic310/godesde0/ejercicios"
 	//"github.com/emic310/godesde0/teclado"
 	//"github.com/emic310/godesde0/iteraciones"
-	"github.com/emic310/godesde0/files"
+	//"github.com/emic310/godesde0/files"
+	"github.com/emic310/godesde0/funciones"
 )
 
 // luego todo lo demas, variables, metodos, funciones
@@ -66,6 +67,8 @@ func main() {
 	//fmt.Println(ejercicios.TablaDeMultiplicar())
 	//files.GrabaTabla()
 	//files.SumaTabla()
-	files.LeoArchivo()
+	//files.LeoArchivo()
+
+	funciones.Calculos()
 
 }
