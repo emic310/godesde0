@@ -3,6 +3,7 @@ package variables
 import (
 	"fmt"
 	"time"
+	"strconv"
 )
 
 func alcance() {
@@ -17,14 +18,12 @@ var Nombre string
 // al crear un string por declaracion, se define con el valor minimo, una cadena vacia
 
 var Estado bool
-// bool por declaracion es false???
+// bool por declaracion es false
 
 var Sueldo float32
 var Fecha time.Time
 
 func RestoVariables() {
-
-	fmt.Println("Estado antes de asignarle valor", Estado)
 
 	Nombre = "Pedro"
 	Estado = true
@@ -36,4 +35,11 @@ func RestoVariables() {
 	fmt.Println(Sueldo)
 	fmt.Println(Fecha)
 
+}
+// se especifica la cantidad y tipo de parametros separados por coma
+func ConviertoATexto(numero int) (bool, string) {
+	texto := strconv.Itoa(numero)
+
+	// se retorna los parametros separados por coma
+	return true, texto
 }
