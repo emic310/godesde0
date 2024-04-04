@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 	//"runtime"
 	//"github.com/emic310/godesde0/variables"
 	//"github.com/emic310/godesde0/ejercicios"
