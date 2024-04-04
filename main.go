@@ -33,7 +33,7 @@ func main() {
 		case "windows":
 			fmt.Println("Esto es Windows")
 		default:
-			fmt.Println("Esto es %s \n", os)
+			fmt.Println("\n Esto es ", os)
 	}
 
 }
