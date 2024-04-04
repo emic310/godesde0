@@ -11,7 +11,8 @@ import (
 	//"github.com/emic310/godesde0/teclado"
 	//"github.com/emic310/godesde0/iteraciones"
 	//"github.com/emic310/godesde0/files"
-	"github.com/emic310/godesde0/funciones"
+	//"github.com/emic310/godesde0/funciones"
+	"github.com/emic310/godesde0/arreglos_slices"
 )
 
 // luego todo lo demas, variables, metodos, funciones
@@ -75,6 +76,8 @@ func main() {
 	// funciones.Exponencial(2)
 	// funciones.ExponencialMiaSinRetorno(2)
 	// funciones.ExponencialMia(2)
-	funciones.ExponencialMiaImprimeInverso(2)
+	// funciones.ExponencialMiaImprimeInverso(2)
+
+	arreglos_slices.MuestroArreglos()
 
 }
