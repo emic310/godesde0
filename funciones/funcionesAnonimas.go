@@ -15,7 +15,7 @@ func Calculos () {
 	fmt.Println(calculo(10, 25))
 
 	// puedo cambiar la logica de la funcion, no su estructura definida (cambiar parametros, que retorna) 
-	calculo := func(numero1 int, numero2 int, numero3 int) int {
+	calculo = func(numero1 int, numero2 int) int {
 		return numero1 * numero2 * numero3
 	}
 
