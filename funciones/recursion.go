@@ -14,18 +14,6 @@ func Exponencial(valor int) {
 
 }
 
-func ExponencialMia(valor int) int {
-
-	fmt.Println(valor)
-
-	if valor < 1000000 {
-		return ExponencialMia(valor * 2)
-	}
-
-	return valor
-
-}
-
 func ExponencialMiaSinRetorno(valor int) {
 
 	fmt.Println(valor)
@@ -33,6 +21,17 @@ func ExponencialMiaSinRetorno(valor int) {
 	if valor < 1000000 {
 		Exponencial(valor * 2)
 	}
+
+}
+
+func ExponencialMia(valor int) int {
+
+	if valor < 1000000 {
+		fmt.Println(valor)
+		return ExponencialMia(valor * 2)
+	}
+
+	return valor
 
 }
 
