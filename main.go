@@ -1,13 +1,17 @@
 package main
+// todos los modulos empiezan con la declaración de en que paquete se encuentran
 
+// luego van los imports
 import (
 	//"fmt"
 	//"runtime"
 	//"github.com/emic310/godesde0/variables"
 	//"github.com/emic310/godesde0/ejercicios"
-	"github.com/emic310/godesde0/teclado"
+	//"github.com/emic310/godesde0/teclado"
+	"github.com/emic310/godesde0/iteraciones"
 )
 
+// luego todo lo demas, variables, metodos, funciones
 func main() {
 	// fmt.Println("Hola Mundo")
 	// variables.MuestroEnteros()
@@ -51,5 +55,7 @@ func main() {
 	fmt.Println(entero, " ", texto)
 	*/
 
-	teclado.IngresoNumeros()
+	//teclado.IngresoNumeros()
+
+	iteraciones.Iterar()
 }

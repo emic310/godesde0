@@ -16,7 +16,6 @@ var leyenda string
 var err error
 
 func IngresoNumeros() {
-	fmt.Println("Ingrese número 1 : ")
 
 	// bufio puede leer de muchas fuente de datos (teclado, lectores de código de barra, archivos...)
 	// tenemos que especificar que va a leer del teclado, que es el standar input (standar output es la consola)
