@@ -6,5 +6,7 @@ import (
 
 func main() {
 	// fmt.Println("Hola Mundo")
-	variables.MuestroEnteros()
+	// variables.MuestroEnteros()
+
+	variables.RestoVariables()
 }
