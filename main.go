@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"runtime"
+	//"runtime"
 	//"github.com/emic310/godesde0/variables"
+	"github.com/emic310/godesde0/ejercicios"
 )
 
 func main() {
@@ -20,6 +21,7 @@ func main() {
 
 	// el if no lleva parentesis, se puede asignar antes de evaluar separando con ;
 	// la llave { va en la misma linea (no abajo) y el ELSE va en la misma linea donde cierra el IF (no abajo)
+	/*
 	if os := runtime.GOOS; os == "linux" || os == "darwin" {
 		fmt.Println("Esto no es Windows, es ", os)
 	} else {
@@ -35,5 +37,11 @@ func main() {
 		default:
 			fmt.Println("\n Esto es ", os)
 	}
+	*/
 
+	entero, texto := ejercicios.ConvertStringToInt("99")
+	fmt.Println(entero, " ", texto)
+
+	entero, texto := ejercicios.ConvertStringToInt("500")
+	fmt.Println(entero, " ", texto)
 }
