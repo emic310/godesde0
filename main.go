@@ -42,6 +42,6 @@ func main() {
 	entero, texto := ejercicios.ConvertStringToInt("99")
 	fmt.Println(entero, " ", texto)
 
-	entero, texto := ejercicios.ConvertStringToInt("500")
+	entero, texto = ejercicios.ConvertStringToInt("500")
 	fmt.Println(entero, " ", texto)
 }
