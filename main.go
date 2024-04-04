@@ -65,6 +65,7 @@ func main() {
 
 	//fmt.Println(ejercicios.TablaDeMultiplicar())
 	//files.GrabaTabla()
-	files.SumaTabla()
+	//files.SumaTabla()
+	files.LeoArchivo()
 
 }

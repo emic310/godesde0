@@ -1,12 +1,12 @@
 package files
 
 import (
-	//"bufio"
+	"bufio"
+	
 	"fmt"
 
 	"github.com/emic310/godesde0/ejercicios"
 
-	//"ioutil"
 	"os"
 )
 
@@ -82,4 +82,29 @@ func Append(texto string) bool {
 
 	return true
 
+}
+
+func LeoArchivo() {
+	// ahora si uso el Open() porque solo voy a leer
+	// me retorna el contenido del archivo en un buffer
+	archivo, err := os.Open(fileName)
+
+	if err != nil {
+		fmt.Println("Hubo un error leyendo el archivo " + err.Error())
+		// como falló salgo del metodo
+		return
+	}
+
+	// puedo escanear que tiene el buffer
+	scanner := bufio.NewScanner(archivo)
+
+	// scanner.Scan() retorna un bool, si pudo escanear, en el momento que no haya mas lineas va a retornar false
+	for scanner.Scan() {
+
+		registro := scanner.Text()
+		fmt.Println("> " + registro)
+	}
+
+	//cerrar el buffer
+	archivo.Close()
 }
