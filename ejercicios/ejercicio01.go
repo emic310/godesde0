@@ -5,9 +5,12 @@ import (
 )
 
 func ConvertStringToInt(texto string) (int, string) {
+	// si no me interesa una de las variables que retorna, puedo "descartarla" con _
+	// entero, _ := strconv.Atoi(texto)
+	
 	entero, err := strconv.Atoi(texto)
 	if err != nil {
-		return 0, "no se pudo convertir"
+		return 0, "no se pudo convertir " + err.Error()
 	}
 
 	if entero > 100 {

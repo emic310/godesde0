@@ -44,4 +44,7 @@ func main() {
 
 	entero, texto = ejercicios.ConvertStringToInt("500")
 	fmt.Println(entero, " ", texto)
+
+	entero, texto = ejercicios.ConvertStringToInt("texto")
+	fmt.Println(entero, " ", texto)
 }
