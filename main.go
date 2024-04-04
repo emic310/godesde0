@@ -72,10 +72,9 @@ func main() {
 	//funciones.Calculos()
 	//funciones.LlamarClosure()
 
-	funciones.Exponencial(2);
-
-	funciones.ExponencialMia(2);
-
-	funciones.ExponencialMiaImprimeInverso(2);
+	// funciones.Exponencial(2)
+	// funciones.ExponencialMiaSinRetorno(2)
+	// funciones.ExponencialMia(2)
+	funciones.ExponencialMiaImprimeInverso(2)
 
 }
