@@ -70,6 +70,12 @@ func main() {
 	//files.LeoArchivo()
 
 	//funciones.Calculos()
-	funciones.LlamarClosure()
+	//funciones.LlamarClosure()
+
+	funciones.Exponencial(2);
+
+	funciones.ExponencialMia(2);
+
+	funciones.ExponencialMiaImprimeInverso(2);
 
 }
