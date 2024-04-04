@@ -59,5 +59,6 @@ func main() {
 
 	//iteraciones.Iterar()
 	
-	ejercicios.TablaUnoAlDiez()
+	ejercicios.TablaCeroAlDiez()
+	ejercicios.TablaDeMultiplicar()
 }
