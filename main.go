@@ -12,7 +12,7 @@ import (
 	//"github.com/emic310/godesde0/iteraciones"
 	//"github.com/emic310/godesde0/files"
 	//"github.com/emic310/godesde0/funciones"
-	"github.com/emic310/godesde0/arreglos_slices"
+	"github.com/emic310/godesde0/funciones/arreglos_slices"
 )
 
 // luego todo lo demas, variables, metodos, funciones
@@ -78,6 +78,7 @@ func main() {
 	// funciones.ExponencialMia(2)
 	// funciones.ExponencialMiaImprimeInverso(2)
 
-	arreglos_slices.MuestroArreglos()
+	//arreglos_slices.MuestroArreglos()
+	arreglos_slices.MuestroSlice()
 
 }
