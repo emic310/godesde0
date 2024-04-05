@@ -13,7 +13,8 @@ import (
 	//"github.com/emic310/godesde0/files"
 	//"github.com/emic310/godesde0/funciones"
 	//"github.com/emic310/godesde0/funciones/arreglos_slices"
-	"github.com/emic310/godesde0/mapas"
+	//"github.com/emic310/godesde0/mapas"
+	"github.com/emic310/godesde0/users"
 )
 
 // luego todo lo demas, variables, metodos, funciones
@@ -83,6 +84,8 @@ func main() {
 	//arreglos_slices.MuestroSlice()
 	//arreglos_slices.Capacidad()
 
-	mapas.MostrarMapas()
+	//mapas.MostrarMapas()
+
+	users.AltaUsuario()
 
 }

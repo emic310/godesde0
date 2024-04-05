@@ -25,9 +25,10 @@ func MostrarMapas() {
 		"Boca Juniors": 30,
 	}
 
+	// el Println de un mapa, imprime ordenado por clave 
 	fmt.Println(campeonato)
 
-	// los mapas no se imprimen ordenados por clave ni valor (con los for)
+	// con los for, los mapas no se imprimen ordenados ni por clave ni por valor
 
 	// si usamos el for range (tipo for each), me devuelve clave y valor, entonces tengo que declarar 2 variables
 	/*	for equipo, puntaje := range campeonato {
