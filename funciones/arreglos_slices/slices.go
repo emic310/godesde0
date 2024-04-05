@@ -28,3 +28,25 @@ func MuestroSlice() {
 	fmt.Println(porcion3)
 }
 
+func Capacidad() {
+	// el Slice tiene un largo y una capacidad (memoria reservada)
+	// la función make permite crear un Slice (y otras estructuras) definiendo el tipo de dato, el tamaño y la capacidad
+	// en este caso el Slice tiene un largo de 5 y una capacidad de 20 en memoria pero no puedo acceder a los elementos 6 a 19
+	elementos := make([]int, 5, 20)
+	fmt.Printf("Largo %d, Capacidad %d", len(elementos), cap(elementos))
+
+	// dificilmente se use asi pero se puede hacer (tamaño y capacidad en Cero)
+	nums := make([]int, 0, 0)
+	for i := 0; i < 100; i++ {
+		// aca le agrego elementos al Slice, tal cual como si fuera una lista
+		// tengo que indicar a que Slice le agrego el o los elementos, tambien puedo agregarle otro u otros Slices
+		nums = append(nums, i)
+
+		// si el Slice se llena, se duplica la capacidad, va reservando 2^n memoria (2, 4, 8 ... 1024 ...)
+		// para el compilador, para el SO, es mas costoso ir a reservar memoria que utilizarla
+		// es menos costoso tener memoria sin usar, que estar reasignando memoria a la variable (reservar y moverla)
+	}
+
+	fmt.Printf("\nLargo %d, Capacidad %d", len(nums), cap(nums))
+
+}

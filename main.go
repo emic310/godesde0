@@ -79,6 +79,7 @@ func main() {
 	// funciones.ExponencialMiaImprimeInverso(2)
 
 	//arreglos_slices.MuestroArreglos()
-	arreglos_slices.MuestroSlice()
+	//arreglos_slices.MuestroSlice()
+	arreglos_slices.Capacidad()
 
 }
