@@ -14,7 +14,11 @@ import (
 	//"github.com/emic310/godesde0/funciones"
 	//"github.com/emic310/godesde0/funciones/arreglos_slices"
 	//"github.com/emic310/godesde0/mapas"
-	"github.com/emic310/godesde0/users"
+	//"github.com/emic310/godesde0/users"
+
+	"github.com/emic310/godesde0/modelos"
+	// puedo darle un alias al modulo si quiero
+	e "github.com/emic310/godesde0/ejer_interfaces"
 )
 
 // luego todo lo demas, variables, metodos, funciones
@@ -86,6 +90,15 @@ func main() {
 
 	//mapas.MostrarMapas()
 
-	users.AltaUsuario()
+	//users.AltaUsuario()
 
+	Pedro := new(modelos.Hombre)
+	e.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	e.HumanosRespirando(Maria)
+	e.EstaVivoEsteSerVivo(Maria)
+
+	SerVivo := new(modelos.Animal)
+	e.EstaVivoEsteSerVivo(SerVivo)
 }
