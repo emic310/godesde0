@@ -15,13 +15,12 @@ func (m *Mujer) Comer()       { m.comiendo = true }
 func (m *Mujer) Pensar()      { m.pensando = true }
 func (m *Mujer) Sexo() string { return "Mujer" }
 
-func (m *Mujer) EstaVivo() bool  { 
-	m.vivo = true
-	return m.vivo 
-}
+// funcion de la interface humano pero que es heredada de la interface servivo
+func (m *Mujer) Vivir()         { m.vivo = true }
+func (m *Mujer) EstaVivo() bool { return m.vivo }
 
 // funciones propias de la clase
-func (m *Mujer) EsMadre() bool { 
+func (m *Mujer) EsMadre() bool {
 	m.esMadre = true
 	return m.esMadre
 }

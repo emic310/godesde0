@@ -97,8 +97,10 @@ func main() {
 
 	Maria := new(modelos.Mujer)
 	e.HumanosRespirando(Maria)
+	Maria.Vivir()
 	e.EstaVivoEsteSerVivo(Maria)
 
 	SerVivo := new(modelos.Animal)
 	e.EstaVivoEsteSerVivo(SerVivo)
+	
 }

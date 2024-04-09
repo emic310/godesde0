@@ -17,7 +17,6 @@ func (h *Hombre) Comer()       { h.comiendo = true }
 func (h *Hombre) Pensar()      { h.pensando = true }
 func (h *Hombre) Sexo() string { return "Hombre" }
 
-func (h *Hombre) EstaVivo() bool { 
-	h.vivo = true
-	return h.vivo 
-}
+// funcion de la interface humano pero que es heredada de la interface servivo
+func (h *Hombre) Vivir()         { h.vivo = true }
+func (h *Hombre) EstaVivo() bool { return h.vivo }

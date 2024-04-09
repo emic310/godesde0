@@ -6,5 +6,6 @@ type Animal interface {
 	Comer()
 	EsCarnivoro() bool
 	// implementa la interface SerVivo
+	Vivir()
 	EstaVivo() bool
 }

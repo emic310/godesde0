@@ -12,12 +12,13 @@ func HumanosRespirando(hu interfaces.Humano) {
 	fmt.Printf("Soy un/a %s, y estoy respirando \n", hu.Sexo())
 }
 
+// esto es polimorfismo, puedo pasarle cualquier clase que implemente la interface servivo (humano (hombre / mujer), animal)
 func EstaVivoEsteSerVivo(sv interfaces.SerVivo) {
 	var vivo = sv.EstaVivo()
 	if vivo {
-		fmt.Printf("Soy un %s y estoy vivo \n", sv)
+		fmt.Printf("Soy un ser vivo y estoy vivo \n")
 	} else {
-		fmt.Printf("Soy un %s y estoy muerto \n", sv)
+		fmt.Printf("Soy un ser vivo pero estoy muerto \n")
 	}
-	
+
 }
