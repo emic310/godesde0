@@ -5,7 +5,7 @@ type Mujer struct {
 	// digo que mujer hereda de hombre
 	Hombre
 	// y luego puedo agregar propiedades que son solo de las mujeres
-	EsMadre bool
+	esMadre bool
 }
 
 // funciones de la interface humano (no se pone el implements al definir la clase (struct) )
@@ -16,9 +16,12 @@ func (m *Mujer) Pensar()      { m.pensando = true }
 func (m *Mujer) Sexo() string { return "Mujer" }
 
 func (m *Mujer) EstaVivo() bool  { 
-	h.vivo = true
-	return h.vivo 
+	m.vivo = true
+	return m.vivo 
 }
 
-// funciones propizs de la clase
-func (m *Mujer) EsMadre bool  { return true }
+// funciones propias de la clase
+func (m *Mujer) EsMadre() bool { 
+	m.esMadre = true
+	return m.esMadre
+}
