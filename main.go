@@ -12,7 +12,7 @@ import (
 	//"github.com/emic310/godesde0/iteraciones"
 	//"github.com/emic310/godesde0/files"
 	//"github.com/emic310/godesde0/funciones"
-	//"github.com/emic310/godesde0/funciones/arreglos_slices"
+	//"github.com/emic310/godesde0/arreglos_slices"
 	//"github.com/emic310/godesde0/mapas"
 	//"github.com/emic310/godesde0/users"
 
