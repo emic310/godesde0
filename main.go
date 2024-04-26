@@ -16,9 +16,11 @@ import (
 	//"github.com/emic310/godesde0/mapas"
 	//"github.com/emic310/godesde0/users"
 
-	"github.com/emic310/godesde0/modelos"
+	//"github.com/emic310/godesde0/modelos"
 	// puedo darle un alias al modulo si quiero
-	e "github.com/emic310/godesde0/ejer_interfaces"
+	//e "github.com/emic310/godesde0/ejer_interfaces"
+
+	d "github.com/emic310/godesde0/defer_panic"
 )
 
 // luego todo lo demas, variables, metodos, funciones
@@ -92,7 +94,7 @@ func main() {
 
 	//users.AltaUsuario()
 
-	Pedro := new(modelos.Hombre)
+	/* Pedro := new(modelos.Hombre)
 	e.HumanosRespirando(Pedro)
 
 	Maria := new(modelos.Mujer)
@@ -101,6 +103,9 @@ func main() {
 	e.EstaVivoEsteSerVivo(Maria)
 
 	SerVivo := new(modelos.Animal)
-	e.EstaVivoEsteSerVivo(SerVivo)
+	e.EstaVivoEsteSerVivo(SerVivo) */
+
+	// d.VemosDefer()
+	d.EjemploPanic()
 	
 }
